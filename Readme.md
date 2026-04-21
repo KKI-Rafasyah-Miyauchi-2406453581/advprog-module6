@@ -3,4 +3,4 @@ For Milestone 1, I learned how to set up a basic TCP listener in Rust and read i
 
 # Milestone 2:
 For Milestone 2, I learned how to construct a valid HTTP response to actually serve a web page back to the browser. Instead of just reading the incoming request, we use the fs module to read an HTML file into a string. The most interesting part was learning that a valid HTTP response requires a very specific, strict format: a status line indicating success (HTTP/1.1 200 OK), followed by headers (importantly, calculating the Content-Length so the browser knows how much data to expect), a mandatory empty line \r\n\r\n to separate headers from the body, and finally the actual HTML contents. Formatting this string correctly and writing it back to the TcpStream allows the browser to properly render the page.
-![Screenshot of the working HTML page](assets/images/commit2.jpeg)
+![Screenshot of the working HTML page](assets/commit2.jpeg)
