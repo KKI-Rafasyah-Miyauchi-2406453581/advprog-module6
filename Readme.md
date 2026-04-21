@@ -1,0 +1,3 @@
+# Milestone 1:
+For Milestone 1, I learned how to set up a basic TCP listener in Rust and read incoming HTTP requests using BufReader. Unlike my previous experience using heavy frameworks like Django where the framework handles all the low-level parsing for you behind the scenes, doing this from scratch in Rust really opened my eyes to how HTTP requests are essentially just formatted text streams sent over a network socket. By reading the incoming TcpStream line by line until we hit an empty line, we are able to manually collect the HTTP request headers and print them to the console, which gave me a much clearer understanding of what actually happens under the hood when a browser tries to connect to a local server.
+
